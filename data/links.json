@@ -20,9 +20,7 @@
       "items": [
         { "title": "Khan Academy Kids", "url": "https://www.khanacademy.org/kids", "emoji": "🌟", "desc": "Reading, math & social-emotional learning." },
         { "title": "Wikipedia", "url": "https://www.wikipedia.org/", "emoji": "🌐", "desc": "The free encyclopedia — look anything up." },
-        { "title": "Simple Wikipedia", "url": "https://simple.wikipedia.org/", "emoji": "💡", "desc": "Wikipedia in easy-to-read English." },
-        { "title": "Wonderopolis", "url": "https://wonderopolis.org/", "emoji": "❓", "desc": "A new 'Wonder of the Day' to explore." }
-      ]
+        { "title": "Simple Wikipedia", "url": "https://simple.wikipedia.org/", "emoji": "💡", "desc": "Wikipedia in easy-to-read English." }      ]
     },
     {
       "name": "Math",
@@ -47,7 +45,7 @@
       "emoji": "🎨",
       "items": [
         { "title": "Tate Kids", "url": "https://www.tate.org.uk/kids", "emoji": "🖼️", "desc": "Make art, play games & explore artists." },
-        { "title": "Sumo Paint", "url": "https://www.sumopaint.com/", "emoji": "🖌️", "desc": "Paint & draw right in the browser." },
+        { "title": "Sumo Paint", "url": "https://paint.sumo.app/", "emoji": "🖌️", "desc": "Paint & draw right in the browser." },
         { "title": "Chrome Music Lab", "url": "https://musiclab.chromeexperiments.com/", "emoji": "🎵", "desc": "Play with sound & make music." },
         { "title": "Quick, Draw!", "url": "https://quickdraw.withgoogle.com/", "emoji": "✏️", "desc": "Doodle while an AI guesses your drawing." }
       ]
