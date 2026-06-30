@@ -41,6 +41,12 @@ const exists = (p) =>
 
 const force = process.argv.includes("--force");
 
+// Capture at roughly 2x the card's display size (cards top out ~400px wide,
+// 16:10) instead of full desktop res — smaller files, still crisp on retina.
+// Override with SHOT_WIDTH / SHOT_HEIGHT.
+const SHOT_W = Number(process.env.SHOT_WIDTH) || 640;
+const SHOT_H = Number(process.env.SHOT_HEIGHT) || 400;
+
 const chrome = await findChrome();
 const data = JSON.parse(await readFile(join(root, "data", "links.json"), "utf8"));
 const items = flatten(data);
@@ -74,8 +80,8 @@ for (const item of items) {
         `--user-data-dir=${profile}`,
         // Some sites serve a blank/blocked page to the default headless UA.
         "--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-        "--window-size=1280,800",
-        "--virtual-time-budget=15000",
+        `--window-size=${SHOT_W},${SHOT_H}`,
+        "--virtual-time-budget=20000",
         `--screenshot=${out}`,
         item.url,
       ],
@@ -88,7 +94,9 @@ for (const item of items) {
     failed++;
     console.warn(`⚠️  ${item.title} — ${err.message.split("\n")[0]}`);
   } finally {
-    await rm(profile, { recursive: true, force: true });
+    // Best-effort — Chrome may still be flushing the profile dir as we exit,
+    // so a failed cleanup must not abort the whole run.
+    await rm(profile, { recursive: true, force: true }).catch(() => {});
   }
 }
 

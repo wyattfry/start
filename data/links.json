@@ -1,6 +1,5 @@
 {
   "title": "Kids Start Page",
-  "tagline": "Fun, edifying places to explore on the web",
   "categories": [
     {
       "name": "Game Making",
@@ -20,7 +19,10 @@
       "items": [
         { "title": "Khan Academy Kids", "url": "https://www.khanacademy.org/kids", "emoji": "🌟", "desc": "Reading, math & social-emotional learning." },
         { "title": "Wikipedia", "url": "https://www.wikipedia.org/", "emoji": "🌐", "desc": "The free encyclopedia — look anything up." },
-        { "title": "Simple Wikipedia", "url": "https://simple.wikipedia.org/", "emoji": "💡", "desc": "Wikipedia in easy-to-read English." }      ]
+        { "title": "Simple Wikipedia", "url": "https://simple.wikipedia.org/", "emoji": "💡", "desc": "Wikipedia in easy-to-read English." },
+        { "title": "PBS Kids", "url": "https://pbskids.org/", "emoji": "📺", "desc": "Games, videos & activities with favorite characters." },
+        { "title": "Funbrain", "url": "https://www.funbrain.com/", "emoji": "🧠", "desc": "Educational games, books & comics, Pre-K to 8." }
+      ]
     },
     {
       "name": "Math",
@@ -66,6 +68,30 @@
         { "title": "NASA Kids' Club", "url": "https://www.nasa.gov/kidsclub/index.html", "emoji": "🚀", "desc": "Space games & activities from NASA." },
         { "title": "Science Bob", "url": "https://sciencebob.com/category/experiments/", "emoji": "🧪", "desc": "Do-it-yourself science experiments." },
         { "title": "DIY.org", "url": "https://diy.org/", "emoji": "🔧", "desc": "Hands-on challenges & skills to learn." }
+      ]
+    },
+    {
+      "name": "Coding & Computers",
+      "emoji": "💻",
+      "items": [
+        { "title": "Code.org", "url": "https://code.org/", "emoji": "👩‍💻", "desc": "Hour of Code & free coding courses for all ages." },
+        { "title": "Kodable", "url": "https://www.kodable.com/", "emoji": "🐾", "desc": "Coding basics through games for younger kids." },
+        { "title": "TypingClub", "url": "https://www.typingclub.com/", "emoji": "⌨️", "desc": "Free, fun lessons to learn touch typing." }
+      ]
+    },
+    {
+      "name": "Languages",
+      "emoji": "🗣️",
+      "items": [
+        { "title": "Duolingo", "url": "https://www.duolingo.com/", "emoji": "🦉", "desc": "Learn a new language with bite-size game lessons." }
+      ]
+    },
+    {
+      "name": "News & Current Events",
+      "emoji": "📰",
+      "items": [
+        { "title": "DOGO News", "url": "https://www.dogonews.com/", "emoji": "🐶", "desc": "Kid-friendly news on science, world & sports." },
+        { "title": "BBC Newsround", "url": "https://www.bbc.co.uk/newsround", "emoji": "🌍", "desc": "Daily news explained for kids." }
       ]
     }
   ]
