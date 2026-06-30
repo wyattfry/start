@@ -10,7 +10,8 @@
         { "title": "MakeCode Arcade", "url": "https://arcade.makecode.com/", "emoji": "🕹️", "desc": "Build retro arcade games, then learn real code." },
         { "title": "Code.org Game Lab", "url": "https://studio.code.org/projects/gamelab", "emoji": "🧩", "desc": "Make games & animations with JavaScript." },
         { "title": "Godot Engine", "url": "https://godotengine.org/", "emoji": "🤖", "desc": "Free, real game engine for 2D & 3D games." },
-        { "title": "GDevelop", "url": "https://gdevelop.io/", "emoji": "🛠️", "desc": "No-code/low-code engine with templates." }
+        { "title": "GDevelop", "url": "https://gdevelop.io/", "emoji": "🛠️", "desc": "No-code/low-code engine with templates." },
+        { "title": "Bloxels", "url": "https://edu.bloxelsbuilder.com/", "emoji": "🟦", "desc": "Make your own video games with blocks & art." }
       ]
     },
     {
