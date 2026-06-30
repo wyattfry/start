@@ -1,0 +1,75 @@
+    :root {
+      --gap: 1rem;
+      --radius: 18px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0 1rem 3rem;
+      color: #1f2933;
+      background: linear-gradient(160deg, #f0f4ff 0%, #fef6f9 100%);
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      background: linear-gradient(90deg, #6d5dfc, #ef6eae);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tagline { margin: .4rem 0 0; color: #52606d; font-size: 1.05rem; }
+    main { max-width: 1100px; margin: 0 auto; }
+    .category { margin-top: 2rem; }
+    .category h2 {
+      font-size: 1.3rem;
+      margin: 0 0 .75rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .cat-emoji { font-size: 1.4rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: var(--gap);
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      gap: .35rem;
+      padding: 1.1rem .75rem;
+      min-height: 150px;
+      border-radius: var(--radius);
+      background: var(--bg);
+      color: var(--fg);
+      text-decoration: none;
+      border: 2px solid transparent;
+      box-shadow: 0 4px 14px rgba(31, 41, 51, .08);
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .tile:hover, .tile:focus-visible {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(31, 41, 51, .16);
+      border-color: var(--accent);
+      outline: none;
+    }
+    .tile-emoji { font-size: 2.4rem; line-height: 1; }
+    .tile-title { font-weight: 700; font-size: 1rem; }
+    .tile-desc { font-size: .78rem; opacity: .85; line-height: 1.25; }
+    footer {
+      max-width: 1100px;
+      margin: 2.5rem auto 0;
+      text-align: center;
+      color: #7b8794;
+      font-size: .85rem;
+    }
+    footer code { background: rgba(0,0,0,.06); padding: .1rem .35rem; border-radius: 6px; }

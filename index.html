@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids Start Page</title>
+  <meta name="description" content="Fun, edifying places to explore on the web" />
+  <style>
+    :root {
+      --gap: 1rem;
+      --radius: 18px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0 1rem 3rem;
+      color: #1f2933;
+      background: linear-gradient(160deg, #f0f4ff 0%, #fef6f9 100%);
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      background: linear-gradient(90deg, #6d5dfc, #ef6eae);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tagline { margin: .4rem 0 0; color: #52606d; font-size: 1.05rem; }
+    main { max-width: 1100px; margin: 0 auto; }
+    .category { margin-top: 2rem; }
+    .category h2 {
+      font-size: 1.3rem;
+      margin: 0 0 .75rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .cat-emoji { font-size: 1.4rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: var(--gap);
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      gap: .35rem;
+      padding: 1.1rem .75rem;
+      min-height: 150px;
+      border-radius: var(--radius);
+      background: var(--bg);
+      color: var(--fg);
+      text-decoration: none;
+      border: 2px solid transparent;
+      box-shadow: 0 4px 14px rgba(31, 41, 51, .08);
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .tile:hover, .tile:focus-visible {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(31, 41, 51, .16);
+      border-color: var(--accent);
+      outline: none;
+    }
+    .tile-emoji { font-size: 2.4rem; line-height: 1; }
+    .tile-title { font-weight: 700; font-size: 1rem; }
+    .tile-desc { font-size: .78rem; opacity: .85; line-height: 1.25; }
+    footer {
+      max-width: 1100px;
+      margin: 2.5rem auto 0;
+      text-align: center;
+      color: #7b8794;
+      font-size: .85rem;
+    }
+    footer code { background: rgba(0,0,0,.06); padding: .1rem .35rem; border-radius: 6px; }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kids Start Page</h1>
+    <p class="tagline">Fun, edifying places to explore on the web</p>
+  </header>
+  <main>
+    <section class="category">
+      <h2><span class="cat-emoji">🎮</span> Game Making</h2>
+      <div class="grid">
+      <a class="tile" href="https://scratch.mit.edu/" style="--bg:hsl(170 70% 88%);--fg:hsl(170 60% 28%);--accent:hsl(170 65% 55%)" title="Make games, animations &amp; stories with blocks.">
+        <span class="tile-emoji">🐱</span>
+        <span class="tile-title">Scratch</span>
+        <span class="tile-desc">Make games, animations &amp; stories with blocks.</span>
+      </a>
+      <a class="tile" href="https://www.youtube.com/@griffpatch" style="--bg:hsl(144 70% 88%);--fg:hsl(144 60% 28%);--accent:hsl(144 65% 55%)" title="Best Scratch game tutorials for kids.">
+        <span class="tile-emoji">📺</span>
+        <span class="tile-title">Griffpatch (YouTube)</span>
+        <span class="tile-desc">Best Scratch game tutorials for kids.</span>
+      </a>
+      <a class="tile" href="https://arcade.makecode.com/" style="--bg:hsl(229 70% 88%);--fg:hsl(229 60% 28%);--accent:hsl(229 65% 55%)" title="Build retro arcade games, then learn real code.">
+        <span class="tile-emoji">🕹️</span>
+        <span class="tile-title">MakeCode Arcade</span>
+        <span class="tile-desc">Build retro arcade games, then learn real code.</span>
+      </a>
+      <a class="tile" href="https://studio.code.org/projects/gamelab" style="--bg:hsl(332 70% 88%);--fg:hsl(332 60% 28%);--accent:hsl(332 65% 55%)" title="Make games &amp; animations with JavaScript.">
+        <span class="tile-emoji">🧩</span>
+        <span class="tile-title">Code.org Game Lab</span>
+        <span class="tile-desc">Make games &amp; animations with JavaScript.</span>
+      </a>
+      <a class="tile" href="https://godotengine.org/" style="--bg:hsl(249 70% 88%);--fg:hsl(249 60% 28%);--accent:hsl(249 65% 55%)" title="Free, real game engine for 2D &amp; 3D games.">
+        <span class="tile-emoji">🤖</span>
+        <span class="tile-title">Godot Engine</span>
+        <span class="tile-desc">Free, real game engine for 2D &amp; 3D games.</span>
+      </a>
+      <a class="tile" href="https://gdevelop.io/" style="--bg:hsl(6 70% 88%);--fg:hsl(6 60% 28%);--accent:hsl(6 65% 55%)" title="No-code/low-code engine with templates.">
+        <span class="tile-emoji">🛠️</span>
+        <span class="tile-title">GDevelop</span>
+        <span class="tile-desc">No-code/low-code engine with templates.</span>
+      </a>
+      </div>
+    </section>
+    <section class="category">
+      <h2><span class="cat-emoji">📚</span> Learning</h2>
+      <div class="grid">
+      <a class="tile" href="https://www.khanacademy.org/kids" style="--bg:hsl(159 70% 88%);--fg:hsl(159 60% 28%);--accent:hsl(159 65% 55%)" title="Reading, math &amp; social-emotional learning.">
+        <span class="tile-emoji">🌟</span>
+        <span class="tile-title">Khan Academy Kids</span>
+        <span class="tile-desc">Reading, math &amp; social-emotional learning.</span>
+      </a>
+      <a class="tile" href="https://www.wikipedia.org/" style="--bg:hsl(63 70% 88%);--fg:hsl(63 60% 28%);--accent:hsl(63 65% 55%)" title="The free encyclopedia — look anything up.">
+        <span class="tile-emoji">🌐</span>
+        <span class="tile-title">Wikipedia</span>
+        <span class="tile-desc">The free encyclopedia — look anything up.</span>
+      </a>
+      <a class="tile" href="https://simple.wikipedia.org/" style="--bg:hsl(265 70% 88%);--fg:hsl(265 60% 28%);--accent:hsl(265 65% 55%)" title="Wikipedia in easy-to-read English.">
+        <span class="tile-emoji">💡</span>
+        <span class="tile-title">Simple Wikipedia</span>
+        <span class="tile-desc">Wikipedia in easy-to-read English.</span>
+      </a>
+      <a class="tile" href="https://wonderopolis.org/" style="--bg:hsl(251 70% 88%);--fg:hsl(251 60% 28%);--accent:hsl(251 65% 55%)" title="A new 'Wonder of the Day' to explore.">
+        <span class="tile-emoji">❓</span>
+        <span class="tile-title">Wonderopolis</span>
+        <span class="tile-desc">A new 'Wonder of the Day' to explore.</span>
+      </a>
+      </div>
+    </section>
+    <section class="category">
+      <h2><span class="cat-emoji">🔢</span> Math</h2>
+      <div class="grid">
+      <a class="tile" href="https://www.khanacademy.org/math" style="--bg:hsl(338 70% 88%);--fg:hsl(338 60% 28%);--accent:hsl(338 65% 55%)" title="Free lessons &amp; practice for every grade.">
+        <span class="tile-emoji">➗</span>
+        <span class="tile-title">Khan Academy Math</span>
+        <span class="tile-desc">Free lessons &amp; practice for every grade.</span>
+      </a>
+      <a class="tile" href="https://www.prodigygame.com/" style="--bg:hsl(132 70% 88%);--fg:hsl(132 60% 28%);--accent:hsl(132 65% 55%)" title="Math practice inside an adventure game.">
+        <span class="tile-emoji">🐉</span>
+        <span class="tile-title">Prodigy Math</span>
+        <span class="tile-desc">Math practice inside an adventure game.</span>
+      </a>
+      <a class="tile" href="https://www.mathplayground.com/" style="--bg:hsl(83 70% 88%);--fg:hsl(83 60% 28%);--accent:hsl(83 65% 55%)" title="Math games, logic puzzles &amp; word problems.">
+        <span class="tile-emoji">🎯</span>
+        <span class="tile-title">Math Playground</span>
+        <span class="tile-desc">Math games, logic puzzles &amp; word problems.</span>
+      </a>
+      </div>
+    </section>
+    <section class="category">
+      <h2><span class="cat-emoji">✍️</span> Story &amp; Writing</h2>
+      <div class="grid">
+      <a class="tile" href="https://librivox.org/" style="--bg:hsl(291 70% 88%);--fg:hsl(291 60% 28%);--accent:hsl(291 65% 55%)" title="Free public-domain audiobooks.">
+        <span class="tile-emoji">🎧</span>
+        <span class="tile-title">LibriVox</span>
+        <span class="tile-desc">Free public-domain audiobooks.</span>
+      </a>
+      <a class="tile" href="https://storylineonline.net/" style="--bg:hsl(2 70% 88%);--fg:hsl(2 60% 28%);--accent:hsl(2 65% 55%)" title="Actors read picture books aloud.">
+        <span class="tile-emoji">📖</span>
+        <span class="tile-title">Storyline Online</span>
+        <span class="tile-desc">Actors read picture books aloud.</span>
+      </a>
+      <a class="tile" href="https://storybird.com/" style="--bg:hsl(94 70% 88%);--fg:hsl(94 60% 28%);--accent:hsl(94 65% 55%)" title="Write &amp; illustrate your own stories.">
+        <span class="tile-emoji">🐦</span>
+        <span class="tile-title">Storybird</span>
+        <span class="tile-desc">Write &amp; illustrate your own stories.</span>
+      </a>
+      </div>
+    </section>
+    <section class="category">
+      <h2><span class="cat-emoji">🎨</span> Art &amp; Creative Tools</h2>
+      <div class="grid">
+      <a class="tile" href="https://www.tate.org.uk/kids" style="--bg:hsl(359 70% 88%);--fg:hsl(359 60% 28%);--accent:hsl(359 65% 55%)" title="Make art, play games &amp; explore artists.">
+        <span class="tile-emoji">🖼️</span>
+        <span class="tile-title">Tate Kids</span>
+        <span class="tile-desc">Make art, play games &amp; explore artists.</span>
+      </a>
+      <a class="tile" href="https://www.sumopaint.com/" style="--bg:hsl(106 70% 88%);--fg:hsl(106 60% 28%);--accent:hsl(106 65% 55%)" title="Paint &amp; draw right in the browser.">
+        <span class="tile-emoji">🖌️</span>
+        <span class="tile-title">Sumo Paint</span>
+        <span class="tile-desc">Paint &amp; draw right in the browser.</span>
+      </a>
+      <a class="tile" href="https://musiclab.chromeexperiments.com/" style="--bg:hsl(92 70% 88%);--fg:hsl(92 60% 28%);--accent:hsl(92 65% 55%)" title="Play with sound &amp; make music.">
+        <span class="tile-emoji">🎵</span>
+        <span class="tile-title">Chrome Music Lab</span>
+        <span class="tile-desc">Play with sound &amp; make music.</span>
+      </a>
+      <a class="tile" href="https://quickdraw.withgoogle.com/" style="--bg:hsl(52 70% 88%);--fg:hsl(52 60% 28%);--accent:hsl(52 65% 55%)" title="Doodle while an AI guesses your drawing.">
+        <span class="tile-emoji">✏️</span>
+        <span class="tile-title">Quick, Draw!</span>
+        <span class="tile-desc">Doodle while an AI guesses your drawing.</span>
+      </a>
+      </div>
+    </section>
+    <section class="category">
+      <h2><span class="cat-emoji">🏛️</span> History</h2>
+      <div class="grid">
+      <a class="tile" href="https://www.bbc.co.uk/bitesize/subjects/zkqmhyc" style="--bg:hsl(306 70% 88%);--fg:hsl(306 60% 28%);--accent:hsl(306 65% 55%)" title="History lessons &amp; activities for kids.">
+        <span class="tile-emoji">📜</span>
+        <span class="tile-title">BBC Bitesize History</span>
+        <span class="tile-desc">History lessons &amp; activities for kids.</span>
+      </a>
+      <a class="tile" href="https://kids.nationalgeographic.com/" style="--bg:hsl(32 70% 88%);--fg:hsl(32 60% 28%);--accent:hsl(32 65% 55%)" title="Animals, science, history &amp; more.">
+        <span class="tile-emoji">🌍</span>
+        <span class="tile-title">National Geographic Kids</span>
+        <span class="tile-desc">Animals, science, history &amp; more.</span>
+      </a>
+      <a class="tile" href="https://www.ducksters.com/history/" style="--bg:hsl(28 70% 88%);--fg:hsl(28 60% 28%);--accent:hsl(28 65% 55%)" title="Easy-to-read history &amp; biographies.">
+        <span class="tile-emoji">🦆</span>
+        <span class="tile-title">Ducksters</span>
+        <span class="tile-desc">Easy-to-read history &amp; biographies.</span>
+      </a>
+      </div>
+    </section>
+    <section class="category">
+      <h2><span class="cat-emoji">🌈</span> Activity Ideas</h2>
+      <div class="grid">
+      <a class="tile" href="https://www.nasa.gov/kidsclub/index.html" style="--bg:hsl(355 70% 88%);--fg:hsl(355 60% 28%);--accent:hsl(355 65% 55%)" title="Space games &amp; activities from NASA.">
+        <span class="tile-emoji">🚀</span>
+        <span class="tile-title">NASA Kids' Club</span>
+        <span class="tile-desc">Space games &amp; activities from NASA.</span>
+      </a>
+      <a class="tile" href="https://sciencebob.com/category/experiments/" style="--bg:hsl(265 70% 88%);--fg:hsl(265 60% 28%);--accent:hsl(265 65% 55%)" title="Do-it-yourself science experiments.">
+        <span class="tile-emoji">🧪</span>
+        <span class="tile-title">Science Bob</span>
+        <span class="tile-desc">Do-it-yourself science experiments.</span>
+      </a>
+      <a class="tile" href="https://diy.org/" style="--bg:hsl(290 70% 88%);--fg:hsl(290 60% 28%);--accent:hsl(290 65% 55%)" title="Hands-on challenges &amp; skills to learn.">
+        <span class="tile-emoji">🔧</span>
+        <span class="tile-title">DIY.org</span>
+        <span class="tile-desc">Hands-on challenges &amp; skills to learn.</span>
+      </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>26 places to explore · edit <code>data/links.json</code> and run <code>node src/build.mjs</code> to update.</p>
+  </footer>
+</body>
+</html>

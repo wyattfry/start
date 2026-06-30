@@ -1,0 +1,74 @@
+{
+  "title": "Kids Start Page",
+  "tagline": "Fun, edifying places to explore on the web",
+  "categories": [
+    {
+      "name": "Game Making",
+      "emoji": "🎮",
+      "items": [
+        { "title": "Scratch", "url": "https://scratch.mit.edu/", "emoji": "🐱", "desc": "Make games, animations & stories with blocks." },
+        { "title": "Griffpatch (YouTube)", "url": "https://www.youtube.com/@griffpatch", "emoji": "📺", "desc": "Best Scratch game tutorials for kids." },
+        { "title": "MakeCode Arcade", "url": "https://arcade.makecode.com/", "emoji": "🕹️", "desc": "Build retro arcade games, then learn real code." },
+        { "title": "Code.org Game Lab", "url": "https://studio.code.org/projects/gamelab", "emoji": "🧩", "desc": "Make games & animations with JavaScript." },
+        { "title": "Godot Engine", "url": "https://godotengine.org/", "emoji": "🤖", "desc": "Free, real game engine for 2D & 3D games." },
+        { "title": "GDevelop", "url": "https://gdevelop.io/", "emoji": "🛠️", "desc": "No-code/low-code engine with templates." }
+      ]
+    },
+    {
+      "name": "Learning",
+      "emoji": "📚",
+      "items": [
+        { "title": "Khan Academy Kids", "url": "https://www.khanacademy.org/kids", "emoji": "🌟", "desc": "Reading, math & social-emotional learning." },
+        { "title": "Wikipedia", "url": "https://www.wikipedia.org/", "emoji": "🌐", "desc": "The free encyclopedia — look anything up." },
+        { "title": "Simple Wikipedia", "url": "https://simple.wikipedia.org/", "emoji": "💡", "desc": "Wikipedia in easy-to-read English." },
+        { "title": "Wonderopolis", "url": "https://wonderopolis.org/", "emoji": "❓", "desc": "A new 'Wonder of the Day' to explore." }
+      ]
+    },
+    {
+      "name": "Math",
+      "emoji": "🔢",
+      "items": [
+        { "title": "Khan Academy Math", "url": "https://www.khanacademy.org/math", "emoji": "➗", "desc": "Free lessons & practice for every grade." },
+        { "title": "Prodigy Math", "url": "https://www.prodigygame.com/", "emoji": "🐉", "desc": "Math practice inside an adventure game." },
+        { "title": "Math Playground", "url": "https://www.mathplayground.com/", "emoji": "🎯", "desc": "Math games, logic puzzles & word problems." }
+      ]
+    },
+    {
+      "name": "Story & Writing",
+      "emoji": "✍️",
+      "items": [
+        { "title": "LibriVox", "url": "https://librivox.org/", "emoji": "🎧", "desc": "Free public-domain audiobooks." },
+        { "title": "Storyline Online", "url": "https://storylineonline.net/", "emoji": "📖", "desc": "Actors read picture books aloud." },
+        { "title": "Storybird", "url": "https://storybird.com/", "emoji": "🐦", "desc": "Write & illustrate your own stories." }
+      ]
+    },
+    {
+      "name": "Art & Creative Tools",
+      "emoji": "🎨",
+      "items": [
+        { "title": "Tate Kids", "url": "https://www.tate.org.uk/kids", "emoji": "🖼️", "desc": "Make art, play games & explore artists." },
+        { "title": "Sumo Paint", "url": "https://www.sumopaint.com/", "emoji": "🖌️", "desc": "Paint & draw right in the browser." },
+        { "title": "Chrome Music Lab", "url": "https://musiclab.chromeexperiments.com/", "emoji": "🎵", "desc": "Play with sound & make music." },
+        { "title": "Quick, Draw!", "url": "https://quickdraw.withgoogle.com/", "emoji": "✏️", "desc": "Doodle while an AI guesses your drawing." }
+      ]
+    },
+    {
+      "name": "History",
+      "emoji": "🏛️",
+      "items": [
+        { "title": "BBC Bitesize History", "url": "https://www.bbc.co.uk/bitesize/subjects/zkqmhyc", "emoji": "📜", "desc": "History lessons & activities for kids." },
+        { "title": "National Geographic Kids", "url": "https://kids.nationalgeographic.com/", "emoji": "🌍", "desc": "Animals, science, history & more." },
+        { "title": "Ducksters", "url": "https://www.ducksters.com/history/", "emoji": "🦆", "desc": "Easy-to-read history & biographies." }
+      ]
+    },
+    {
+      "name": "Activity Ideas",
+      "emoji": "🌈",
+      "items": [
+        { "title": "NASA Kids' Club", "url": "https://www.nasa.gov/kidsclub/index.html", "emoji": "🚀", "desc": "Space games & activities from NASA." },
+        { "title": "Science Bob", "url": "https://sciencebob.com/category/experiments/", "emoji": "🧪", "desc": "Do-it-yourself science experiments." },
+        { "title": "DIY.org", "url": "https://diy.org/", "emoji": "🔧", "desc": "Hands-on challenges & skills to learn." }
+      ]
+    }
+  ]
+}
