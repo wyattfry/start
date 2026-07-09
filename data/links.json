@@ -78,6 +78,7 @@
       "name": "Coding & Computers",
       "emoji": "💻",
       "items": [
+        { "title": "Robodog Sim", "url": "https://bittlex-sim.petoi.com/", "emoji": "🤖", "desc": "Programmable robot dog simulator" },
         { "title": "Code.org", "url": "https://code.org/", "emoji": "👩‍💻", "desc": "Hour of Code & free coding courses for all ages." },
         { "title": "Kodable", "url": "https://www.kodable.com/", "emoji": "🐾", "desc": "Coding basics through games for younger kids." },
         { "title": "TypingClub", "url": "https://www.typingclub.com/", "emoji": "⌨️", "desc": "Free, fun lessons to learn touch typing." }
