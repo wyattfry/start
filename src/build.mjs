@@ -27,7 +27,6 @@ const exists = (p) =>
 async function tile(item) {
   const c = colorFor(item.title);
   const b = colorFor(item.category);
-  console.log(b)
   const shot = `shots/${slug(item.title)}.png`;
   const hasShot = await exists(join(root, shot));
   const thumb = hasShot
