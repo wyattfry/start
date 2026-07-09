@@ -26,16 +26,17 @@ const exists = (p) =>
 
 async function tile(item) {
   const c = colorFor(item.title);
+  const b = colorFor(item.category);
+  console.log(b)
   const shot = `shots/${slug(item.title)}.png`;
   const hasShot = await exists(join(root, shot));
   const thumb = hasShot
     ? `<span class="tile-shot" style="background-image:url('${esc(shot)}')"></span>`
     : `<span class="tile-shot tile-shot--placeholder"><span class="tile-emoji">${esc(item.emoji || "🔗")}</span></span>`;
-  return `      <a class="tile" href="${esc(item.url)}" style="--bg:${c.bg};--fg:${c.fg};--accent:${c.accent}"${
-    item.desc ? ` title="${esc(item.desc)}"` : ""
-  }>
+  return `      <a class="tile" href="${esc(item.url)}" style="--bg:${c.bg};--fg:${c.fg};--accent:${c.accent}"${item.desc ? ` title="${esc(item.desc)}"` : ""
+    }>
         ${thumb}
-        <span class="tile-badge">${esc(item.categoryEmoji || "📁")} ${esc(item.category)}</span>
+        <span class="tile-badge" style="--bbg:${b.accent};--bfg:white;">${esc(item.categoryEmoji || "📁")} ${esc(item.category)}</span>
         <span class="tile-body">
           <span class="tile-title">${esc(item.emoji || "🔗")} ${esc(item.title)}</span>
           ${item.desc ? `<span class="tile-desc">${esc(item.desc)}</span>` : ""}
@@ -45,7 +46,7 @@ async function tile(item) {
 
 const data = JSON.parse(await readFile(join(root, "data", "links.json"), "utf8"));
 const css = await readFile(join(root, "src", "styles.css"), "utf8");
-const items = flatten(data);
+const items = flatten(data).sort((a, b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
 const tiles = (await Promise.all(items.map(tile))).join("\n");
 
 const html = `<!doctype html>
