@@ -5,6 +5,7 @@
       "name": "Game Making",
       "emoji": "🎮",
       "items": [
+        { "title": "Kenney", "url": "https://kenney.nl/", "emoji": "🖌️", "desc": "Thousands of completely free game assets." },
         { "title": "Scratch", "url": "https://scratch.mit.edu/", "emoji": "🐱", "desc": "Make games, animations & stories with blocks." },
         { "title": "Griffpatch (YouTube)", "url": "https://www.youtube.com/@griffpatch", "emoji": "📺", "desc": "Best Scratch game tutorials for kids." },
         { "title": "MakeCode Arcade", "url": "https://arcade.makecode.com/", "emoji": "🕹️", "desc": "Build retro arcade games, then learn real code." },
